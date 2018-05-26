@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//DBFLUTE//DTD LastaDi 1.0//EN"
+	"http://dbflute.org/meta/lastadi10.dtd">
+<components namespace="dbflute">
+	<include condition="#exists('#path')" path="my_included_dbflute.xml"/>
+	<include path="rdb.xml"/>
+
+	<!-- The components of DBFlute Runtime. -->
+	<component name="introduction" class="world.sake.dbflute.allcommon.DBFluteInitializer"/>
+	<component name="invokerAssistant" class="world.sake.dbflute.allcommon.ImplementedInvokerAssistant"/>
+	<component name="behaviorCommandInvoker" class="org.dbflute.bhv.core.BehaviorCommandInvoker"/>
+	<component name="behaviorSelector" class="world.sake.dbflute.allcommon.ImplementedBehaviorSelector"/>
+	<component name="commonColumnAutoSetupper" class="world.sake.dbflute.allcommon.ImplementedCommonColumnAutoSetupper"/>
+
+	<!-- The components of Behavior. -->
+	<component name="memberBhv" class="world.sake.dbflute.exbhv.MemberBhv"/>
+	<component name="memberAddressBhv" class="world.sake.dbflute.exbhv.MemberAddressBhv"/>
+	<component name="memberFollowingBhv" class="world.sake.dbflute.exbhv.MemberFollowingBhv"/>
+	<component name="memberLoginBhv" class="world.sake.dbflute.exbhv.MemberLoginBhv"/>
+	<component name="memberSecurityBhv" class="world.sake.dbflute.exbhv.MemberSecurityBhv"/>
+	<component name="memberServiceBhv" class="world.sake.dbflute.exbhv.MemberServiceBhv"/>
+	<component name="memberStatusBhv" class="world.sake.dbflute.exbhv.MemberStatusBhv"/>
+	<component name="memberWithdrawalBhv" class="world.sake.dbflute.exbhv.MemberWithdrawalBhv"/>
+	<component name="productBhv" class="world.sake.dbflute.exbhv.ProductBhv"/>
+	<component name="productCategoryBhv" class="world.sake.dbflute.exbhv.ProductCategoryBhv"/>
+	<component name="productStatusBhv" class="world.sake.dbflute.exbhv.ProductStatusBhv"/>
+	<component name="purchaseBhv" class="world.sake.dbflute.exbhv.PurchaseBhv"/>
+	<component name="purchasePaymentBhv" class="world.sake.dbflute.exbhv.PurchasePaymentBhv"/>
+	<component name="regionBhv" class="world.sake.dbflute.exbhv.RegionBhv"/>
+	<component name="serviceRankBhv" class="world.sake.dbflute.exbhv.ServiceRankBhv"/>
+	<component name="withdrawalReasonBhv" class="world.sake.dbflute.exbhv.WithdrawalReasonBhv"/>
+</components>
